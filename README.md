@@ -31,44 +31,49 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-grey_img = cv2.imread('dark mickey.webp',cv2.IMREAD_GRAYSCALE)
+grey_img = cv2.imread('gray.jpeg', cv2.IMREAD_GRAYSCALE)
 
-plt.title("Grey Mickey")
-plt.imshow(grey_img,cmap='gray')
+plt.title("Grayscale Image")
+plt.imshow(grey_img, cmap='gray')
 plt.axis('off')
+plt.show()
 
-plt.title("Histogram of Grey Mickey")
-plt.hist(grey_img.ravel(),bins=256,color='black',alpha=0.6)
-plt.xlim(0,255)
+plt.title("Histogram of Grayscale Image")
+plt.hist(grey_img.ravel(), bins=256, color='black', alpha=0.6)
+plt.xlim(0, 255)
 plt.tight_layout()
 plt.show()
 
 equalized_grey_img = cv2.equalizeHist(grey_img)
 
-plt.title("Equalized Hist of Grey Mickey")
-plt.hist(equalized_grey_img.ravel(),bins=256,color='black',alpha=0.6)
-plt.xlim(0,255)
+plt.title("Equalized Hist of Grayscale Image")
+plt.hist(equalized_grey_img.ravel(), bins=256, color='black', alpha=0.6)
+plt.xlim(0, 255)
 plt.tight_layout()
 plt.show()
 
 plt.title("Enhanced Image")
-plt.imshow(equalized_grey_img,cmap='gray')
+plt.imshow(equalized_grey_img, cmap='gray')
 plt.axis('off')
+plt.show()
 
-color_img=cv2.imread('donald.webp')
+color_img = cv2.imread('color.jpg')
 
 plt.title("Color Image")
-plt.imshow(cv2.cvtColor(color_img,cv2.COLOR_BGR2RGB))
+plt.imshow(cv2.cvtColor(color_img, cv2.COLOR_BGR2RGB))
 plt.axis('off')
+plt.show()
 
-hist_b=cv2.calcHist([color_img],[0],None,[256],[0,256])
-hist_g=cv2.calcHist([color_img], [1], None, [256], [0, 256])
-hist_r=cv2.calcHist([color_img], [2], None, [256], [0, 256])
+hist_b = cv2.calcHist([color_img], [0], None, [256], [0, 256])
+hist_g = cv2.calcHist([color_img], [1], None, [256], [0, 256])
+hist_r = cv2.calcHist([color_img], [2], None, [256], [0, 256])
 
-plt.title("Hist of color image")
-plt.plot(hist_b,color='blue',label='Blue')
-plt.plot(hist_g,color='green',label='Green')
-plt.plot(hist_r,color='red',label='Red')
+plt.title("Hist of Color Image")
+plt.plot(hist_b, color='blue', label='Blue')
+plt.plot(hist_g, color='green', label='Green')
+plt.plot(hist_r, color='red', label='Red')
+plt.legend()
+plt.show()
 
 blue_channel_eq = cv2.equalizeHist(color_img[:, :, 0])
 green_channel_eq = cv2.equalizeHist(color_img[:, :, 1])
@@ -76,7 +81,9 @@ red_channel_eq = cv2.equalizeHist(color_img[:, :, 2])
 
 equalized_color_img = cv2.merge([blue_channel_eq, green_channel_eq, red_channel_eq])
 
-plt.imshow(equalized_color_img)
+plt.imshow(cv2.cvtColor(equalized_color_img, cv2.COLOR_BGR2RGB))
+plt.axis('off')
+plt.show()
 
 ```
 ## Output:

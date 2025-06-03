@@ -124,7 +124,7 @@ plt.show()
 
 ### vi)Image Cropping
 
-![image](https://github.com/user-attachments/assets/1ece29dc-dd1e-49b2-8e2c-1b545fe48a44)
+![image](https://github.com/user-attachments/assets/5554b780-803e-440d-953c-f1210c1efdd7)
 
 
 ## Result: 

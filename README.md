@@ -1,6 +1,4 @@
 # IMAGE-TRANSFORMATIONS
-
-
 ## Aim
 To perform image transformation such as Translation, Scaling, Shearing, Reflection, Rotation and Cropping using OpenCV and Python.
 
@@ -105,22 +103,29 @@ plt.show()
 ```
 ## Output:
 ### i)Image Translation
-![image](https://github.com/user-attachments/assets/ba7cf5e7-8ce0-465d-b200-a2f293807fc1)
+
+![image](https://github.com/user-attachments/assets/39a1b193-7b4c-4b06-9467-8a84f153dbc6)
 
 ### ii) Image Scaling
-![image](https://github.com/user-attachments/assets/7f984700-277c-49bd-a59a-81fea2a8fc03)
+
+![image](https://github.com/user-attachments/assets/582c4a97-3b00-49cc-adb8-6197184ff613)
 
 ### iii)Image shearing
-![image](https://github.com/user-attachments/assets/69eb6f46-d992-4d38-899c-d9f462adcbf1)
+
+![image](https://github.com/user-attachments/assets/ad14d2e1-2082-4e46-bb1b-cb3bcb2df51a)
 
 ### iv)Image Reflection
-![image](https://github.com/user-attachments/assets/2f933490-e162-4c51-a371-d198e5c87409)
+
+![image](https://github.com/user-attachments/assets/ecb7f100-9844-4283-ac3f-95a2564fe38d)
 
 ### v)Image Rotation
-![image](https://github.com/user-attachments/assets/65971fdb-0ff5-47e6-add2-b09c40e6fb0d)
+
+![image](https://github.com/user-attachments/assets/ebb15a20-d53f-4d82-881f-dfe72faffea2)
 
 ### vi)Image Cropping
+
 ![image](https://github.com/user-attachments/assets/1ece29dc-dd1e-49b2-8e2c-1b545fe48a44)
+
 
 ## Result: 
 
